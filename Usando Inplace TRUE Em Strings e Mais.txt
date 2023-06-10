@@ -1,0 +1,22 @@
+fillna(): O método fillna() permite preencher valores vazios em uma coluna com um valor específico. Por exemplo, para preencher todos os valores vazios em uma coluna chamada "coluna1" com o valor "desconhecido", você pode usar o seguinte código:
+python
+Copy code
+df['coluna1'].fillna('desconhecido', inplace=True)
+replace(): O método replace() permite substituir valores específicos em uma coluna, incluindo valores vazios. Por exemplo, para substituir os valores vazios por "desconhecido" na coluna "coluna1", você pode fazer o seguinte:
+python
+Copy code
+df['coluna1'].replace('', 'desconhecido', inplace=True)
+ffill() e bfill(): Esses métodos preenchem os valores vazios usando o valor anterior (ffill()) ou o valor seguinte (bfill()) na coluna. Eles são úteis quando você deseja preencher os valores vazios com base nos valores adjacentes na mesma coluna. Aqui está um exemplo:
+python
+Copy code
+df['coluna1'].fillna(method='ffill', inplace=True)  # Preenche os valores vazios com o valor anterior
+df['coluna1'].fillna(method='bfill', inplace=True)  # Preenche os valores vazios com o valor seguinte
+interpolate(): O método interpolate() é usado para preencher valores vazios com base em uma interpolação linear dos valores existentes. Isso é útil quando você deseja preencher valores ausentes com base em uma tendência nos dados. Por exemplo:
+python
+Copy code
+df['coluna1'].interpolate(method='linear', inplace=True)
+Esses são apenas alguns dos métodos disponíveis para preencher valores vazios em colunas de strings no Pandas. A escolha do método depende da natureza dos dados e da lógica que você deseja aplicar para preencher os valores ausentes.
+
+
+# Caso tivessemos numeros:
+#base.fillna(base.Cabine.mean(), inplace=True)
