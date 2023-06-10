@@ -1,0 +1,17 @@
+Alem do gráfico "sns.violinplot" quais outros temos?
+
+- sns.barplot
+- sns.swarmplot
+- sns.boxplot
+- sns.countplot
+- sns.lineplot
+- sns.distplot
+- sns.regplot
+- sns.heatmap
+- sns.clustermap
+- sns.scatterplot
+- sns.stripplot
+- sns.FacetGrid
+- sns.pairplot
+- sns.lmplot
+- sns.jointplot
